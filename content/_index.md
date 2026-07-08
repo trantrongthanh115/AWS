@@ -48,7 +48,7 @@ chapter: false
 
 &emsp; **Internship Duration:** From 20/04/2026 to 15/07/2026
 
-![Student 2 profile picture]("/images/avatar2.jpg")
+![Student 2 profile picture](/images/avatar2.jpg)
 
 ---
 
@@ -71,7 +71,7 @@ chapter: false
 
 &emsp; **Internship Duration:** From 20/04/2026 to 15/07/2026
 
-![Student 3 profile picture]("\images\avatar3.jpg")
+![Student 3 profile picture](/images/avatar3.jpg)
 
 ---
 
@@ -94,7 +94,7 @@ chapter: false
 
 &emsp; **Internship Duration:** From 20/04/2026 to 15/07/2026
 
-![Student 4 profile picture]("\images\avatar4.jpg")
+![Student 4 profile picture](/images/avatar4.jpg)
 
 ---
 
@@ -117,7 +117,7 @@ chapter: false
 
 &emsp; **Internship Duration:** From 20/04/2026 to 15/07/2026
 
-![Student 5 profile picture]("\images\avatar5.jpg")
+![Student 5 profile picture](/images/avatar5.jpg)
 
 
 ### Report Content

@@ -69,4 +69,4 @@ The session motivated me to adjust my day-to-day learning habits, starting with 
 
 ### Event Photos
 
-![Kick-off AWS First Cloud Journey Workforce](D:\TAAWS\git\static\images\event1.jpg)
+![Kick-off AWS First Cloud Journey Workforce](/images/event1.jpg)

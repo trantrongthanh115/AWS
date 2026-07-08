@@ -204,4 +204,4 @@ Buổi Community Day mang lại lượng kiến thức kỹ thuật rất lớn,
 
 ### Hình Ảnh Sự Kiện
 
-![AWS First Cloud AI Journey Workshop](D:/TAAWS/git/static/images/event4.jpg)
+![AWS First Cloud AI Journey Workshop](/images/event4.jpg)

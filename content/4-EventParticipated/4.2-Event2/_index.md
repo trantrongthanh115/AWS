@@ -206,4 +206,4 @@ The sessions reminded me that every engineer is constantly learning and refining
 
 ### Event Photos
 
-![AWS First Cloud AI Journey Workshop](D:/TAAWS/git/static/images/event2.JPG)
+![AWS First Cloud AI Journey Workshop](/images/event2.JPG)

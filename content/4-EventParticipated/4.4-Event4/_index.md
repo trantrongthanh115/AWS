@@ -204,4 +204,4 @@ The primary takeaway from the event is the shift in how AI is utilized: transiti
 
 ### Event Photos
 
-![AWS First Cloud AI Journey Workshop](D:/TAAWS/git/static/images/event4.jpg)
+![AWS First Cloud AI Journey Workshop](/images/event4.jpg)
