@@ -37,180 +37,170 @@ pre: " <b> 4.2. </b> "
 #### 1. Level Up Your AWS Skills with Cloud Quest and Floci
 *Diễn giả: Huỳnh Thái Linh*
 
-> *Đây cũng là phần trình bày của bản thân mình với tư cách diễn giả trong sự kiện này.*
+> *Tôi đã tham gia buổi chia sẻ thú vị này từ diễn giả Huỳnh Thái Linh về các phương pháp thực hành điện toán đám mây thực tế.*
 
-Phần trình bày hướng đến những bạn mới bắt đầu học AWS - những người đang bị cản trở bởi hai nỗi sợ lớn nhất: **hóa đơn AWS** và **quên xóa tài nguyên sau khi thực hành**.
+Nội dung phần này hướng đến những người mới bắt đầu tiếp cận AWS - những đối tượng thường gặp trở ngại bởi hai nỗi lo lớn: **phát sinh chi phí ngoài ý muốn** và **quên gỡ bỏ tài nguyên sau khi hoàn thành bài tập**.
 
-**AWS Cloud Quest - Học AWS như chơi game:**
-AWS Cloud Quest là một môi trường thực hành 3D miễn phí theo dạng nhiệm vụ (game quests). Thay vì đọc tài liệu khô khan, người học tiếp cận kiến thức đám mây cốt lõi thông qua các nhiệm vụ thực tế trong một thành phố ảo.
+**Học AWS thông qua tương tác với AWS Cloud Quest:**
+AWS Cloud Quest cung cấp một nền tảng học tập 3D trực quan, sinh động. Thay vì đọc các tài liệu lý thuyết khô khan, người học sẽ thực hiện các nhiệm vụ giải quyết sự cố về cloud trong một mô hình thành phố ảo.
 
-**Floci - Emulator AWS miễn phí, mã nguồn mở:**
-Floci là một trình giả lập dịch vụ AWS cục bộ, cho phép kiểm thử kiến trúc cloud ngay trên máy cá nhân mà không tốn một đồng chi phí.
+**Thử nghiệm cục bộ với Floci:**
+Floci là một công cụ giả lập các dịch vụ AWS gọn nhẹ, mã nguồn mở chạy ngay trên máy cá nhân. Công cụ này giúp các lập trình viên thử nghiệm kiến trúc hệ thống của mình mà không lo phát sinh chi phí trên cloud.
 
-**So sánh Floci vs LocalStack:**
-| Tiêu chí | Floci | LocalStack Community |
+**So sánh chi tiết Floci và LocalStack:**
+| Tiêu chí so sánh | Trình giả lập Floci | LocalStack (Bản Community) |
 |----------|-------|---------------------|
-| Tốc độ khởi động | Nhanh hơn **138 lần** | Chậm hơn |
-| Bộ nhớ sử dụng | Tiết kiệm hơn **11 lần** | Tốn bộ nhớ hơn |
-| Dịch vụ miễn phí | Nhiều hơn | Giới hạn ở bản Community |
-| Hạn chế | Số dịch vụ còn giới hạn, một số trả mock data | Ổn định hơn ở nhiều dịch vụ |
+| Thời gian khởi động | **Nhanh hơn 138 lần** | Bình thường |
+| Dung lượng bộ nhớ | **Tiết kiệm hơn 11 lần** | Bình thường |
+| Các dịch vụ miễn phí | Đa dạng hơn | Bị hạn chế ở bản miễn phí |
+| Hạn chế kỹ thuật | Số lượng dịch vụ hỗ trợ ít hơn | Độ phủ dịch vụ tốt hơn |
 
-**Lộ trình học tập đề xuất:**
-1. **Giai đoạn 1 - Tư duy & kiến trúc:** Học qua AWS Cloud Quest, hình thành tư duy cloud-native.
-2. **Giai đoạn 2 - Thực hành & kiểm thử:** Viết code và kiểm thử nhanh qua Floci, không lo chi phí.
-3. **Giai đoạn 3 - Triển khai thực tế:** Sau khi đã tự tin, mới lên AWS thật để deploy.
+**Lộ trình học tập được khuyến nghị:**
+1. **Tiếp cận tư duy:** Xây dựng tư duy thiết kế hệ thống cloud thông qua AWS Cloud Quest.
+2. **Kiểm thử cục bộ:** Lập trình và chạy thử nhanh chóng trên máy cá nhân bằng Floci để tránh rủi ro chi phí.
+3. **Triển khai thực tế:** Khi kiến trúc cục bộ đã hoạt động ổn định mới đưa lên môi trường AWS thật.
 
-> *"Đừng để nỗi sợ hóa đơn cản bước bạn học cloud. Hãy thực hành đủ nhiều trước, tự tin rồi mới lên môi trường thật."*
+> *"Đừng để nỗi lo về chi phí ngăn cản bạn khám phá điện toán đám mây. Hãy tích lũy kinh nghiệm trong môi trường an toàn trước khi đưa hệ thống lên production."*
 
 ---
 
 #### 2. Hackathon – More like "HA! A tons, of fun"
 *Diễn giả: Nhóm "The Ballers" - Huỳnh An Khương, Mai Quốc Anh, Nguyễn Trần Minh Quân*
 
-Những câu chuyện thực tế "vừa vui vừa cực" - đau lưng, thiếu ngủ, sửa bug tới sáng - từ hành trình thi đấu LotusHacks (Hackathon lớn nhất Việt Nam) trong 36 giờ liên tục.
+Nhóm chia sẻ những trải nghiệm chân thực từ 36 giờ thi đấu liên tục tại LotusHacks—sân chơi hackathon quy mô lớn nhất Việt Nam—nơi đòi hỏi sự tập trung cao độ, làm việc xuyên đêm và khả năng chịu áp lực lớn.
 
-**Ý tưởng ra đời như thế nào?**
-Sau ngày đầu tiên bế tắc hoàn toàn, nhóm nhận ra vấn đề từ chính nỗi đau hàng ngày: các công cụ AI tạo UI hiện tại chỉ sinh ra mô hình tĩnh, re-prompt liên tục khiến thiết kế bị lệch và tốn token. Từ đó **UTMorpho** ra đời - một AI Agent cho phép tạo và chỉnh sửa UI trực tiếp trên canvas (WYSIWYG).
+**Quá trình hình thành ý tưởng:**
+Từ những khó khăn thực tế khi sử dụng các công cụ sinh giao diện bằng AI hiện tại (chỉ tạo ra mockup tĩnh, dễ lệch thiết kế khi chỉnh sửa và tiêu tốn nhiều tài nguyên API), nhóm đã phát triển **UTMorpho**—một trợ lý AI hỗ trợ chỉnh sửa mã nguồn giao diện trực tiếp trên canvas tương tác.
 
-**Hai dự án trong cuộc thi:**
-- **SynthHunter** - Hệ thống xác thực giọng nói AI: Dùng XLS-R, Whisper và phân tích nhịp điệu dừng để phát hiện giọng nói do AI giả lập, chống gian lận. Kết quả: **Top 21 chung cuộc, Top 10 AWS Track**.
-- **Vortex** - Quy trình tuyển dụng kết nối: Sàng lọc CV, phỏng vấn hành vi và kỹ thuật giúp ứng viên tự tin hơn khi xin việc. Kết quả: **Top 25 chung cuộc, Top 10 AWS Track**.
+**Các dự án được phát triển trong kỳ thi:**
+- **SynthHunter** (Hệ thống xác thực giọng nói): Ứng dụng XLS-R và Whisper để nhận diện giọng nói nhân tạo (deepfake) thông qua phân tích nhịp điệu ngắt nghỉ. Kết quả: **Top 21 chung cuộc, Top 10 AWS Track**.
+- **Vortex** (Nền tảng tuyển dụng thông minh): Hỗ trợ phân tích CV và tổ chức phỏng vấn giả lập nhằm giảm bớt sự lo lắng cho ứng viên. Kết quả: **Top 25 chung cuộc, Top 10 AWS Track**.
 
 **Những khó khăn thực tế:**
-Thức đêm liên tục, không tìm được quán cafe 24/7 mở điều hòa, sàn nhà bẩn, ăn đồ ăn nhanh, và toàn bộ ghế lười (beanbag) đều bị... trẻ em chơi Minecraft chiếm hết.
+Thành viên nhóm phải thích nghi với việc làm việc trong không gian hẹp, thiếu chỗ ngủ nghỉ thoải mái, ăn uống nhanh và môi trường thi đấu ồn ào.
 
-**Bài học:**
-- Ý tưởng tốt đến từ chính nỗi bực bội hàng ngày của mình.
-- Đôi khi bước lùi lại giúp nhìn rõ hơn là cố ép bản thân.
-- Sự ăn ý trong đội thay thế được cho hàng chục cuộc họp.
-- Coi AI (Claude, Bedrock) như một thành viên trong đội - không chỉ là công cụ.
+**Bài học cốt lõi:**
+- Ý tưởng thực tế nhất thường xuất phát từ việc giải quyết khó khăn của chính bản thân.
+- Đôi khi việc dừng lại để đánh giá quan trọng hơn việc cố gắng hoàn thành công việc một cách mù quáng.
+- Sự phối hợp ăn ý của tập thể mang lại hiệu quả cao hơn năng lực cá nhân đơn lẻ.
+- Nên xem các công cụ AI (Claude, Bedrock) như những cộng sự đồng hành thay vì chỉ là công cụ tra cứu.
 
 ---
 
 #### 3. Why We Always Need Confidence
 *Diễn giả: Nguyễn Thị Quỳnh Như*
 
-Phần trình bày về tầm quan trọng của sự tự tin - không phải là thứ bẩm sinh, mà là thứ **xây dựng được từ hành động nhỏ hàng ngày**.
+Buổi chia sẻ nhấn mạnh vai trò của sự tự tin đối với sự phát triển nghề nghiệp và cách rèn luyện yếu tố này thông qua các thói quen hàng ngày.
 
 **Vấn đề thực tế:**
-Có không ít bạn kỹ thuật rất giỏi nhưng bị đánh giá thấp chỉ vì kỹ năng thuyết trình run rẩy. Sự thiếu tự tin khiến sinh viên bỏ lỡ cơ hội, chịu áp lực vô hình và che giấu đi tiềm năng của bản thân.
+Nhiều nhân sự kỹ thuật có chuyên môn tốt nhưng gặp hạn chế trong giao tiếp và trình bày trước đám đông. Sự thiếu tự tin này khiến họ bỏ lỡ nhiều cơ hội thăng tiến và chịu áp lực tâm lý không đáng có.
 
 **Định nghĩa lại sự tự tin:**
-- Tự tin **không phải** là cái tôi (ego).
-- Tự tin **không phải** là phải có mọi câu trả lời trước khi bắt đầu.
-- Tự tin **là** dám thử, ngay cả khi đang cảm thấy lo lắng.
+- Tự tin không đồng nghĩa với sự kiêu ngạo.
+- Tự tin không đòi hỏi bạn phải biết hết mọi câu trả lời trước khi bắt đầu.
+- Tự tin đơn giản là việc sẵn sàng thử sức dù chưa chắc chắn về kết quả.
 
-**Cơ sở khoa học:**
-- *Hội chứng kẻ mạo danh*: "Tôi không xứng đáng ở đây."
-- *Hiệu ứng Dunning-Kruger*: Giai đoạn "thung lũng tuyệt vọng" khi bắt đầu học một lĩnh vực mới.
+**Các hiện tượng tâm lý:**
+- *Hội chứng kẻ mạo danh (Impostor Syndrome)*: Cảm giác nghi ngờ năng lực bản thân, cho rằng thành công có được là nhờ may mắn.
+- *Hiệu ứng Dunning-Kruger*: Hiện tượng người mới bắt đầu thường tự đánh giá quá cao năng lực, sau đó giảm mạnh sự tự tin khi nhận ra lượng kiến thức khổng lồ cần học.
 
-**Các cách xây dựng sự tự tin:**
-- **Chuẩn bị kỹ lưỡng**: Sự rõ ràng giảm bớt nỗi sợ khi phỏng vấn, thuyết trình.
-- **Ăn mừng chiến thắng nhỏ**: Dám đặt một câu hỏi, sửa được một bug - mỗi hành động nhỏ tích lũy thành tự tin lớn.
-- **Quy tắc 5 giây**: Đếm ngược 5-4-3-2-1 rồi hành động ngay - dập tắt tiếng nói tự ti trước khi nó kịp thắng.
+**Các phương pháp rèn luyện:**
+- **Chuẩn bị chu đáo**: Việc lên kế hoạch và cấu trúc nội dung kỹ lưỡng giúp giảm bớt sự hồi hộp.
+- **Ghi nhận những thành công nhỏ**: Việc sửa được một lỗi khó hoặc phát biểu ý kiến giúp tích lũy sự tự tin dần dần.
+- **Quy tắc 5 giây**: Đếm ngược từ 5 đến 1 và hành động ngay lập tức để vượt qua sự trì hoãn.
 
-> *"Kỹ thuật là nền móng, tự tin là chiếc cầu nối. Không có cây cầu đó, bạn mãi chỉ đứng nhìn cơ hội từ phía bên này."*
+> *"Chuyên môn kỹ thuật là động cơ, còn sự tự tin đóng vai trò như hộp số giúp chuyển hóa năng lượng đó thành hành động. Thiếu hộp số, động cơ sẽ không thể vận hành tối đa công suất."*
 
 ---
 
 #### 4. Nền Tảng Tử Vi Toàn Diện Kết Hợp AI và AWS
 *Diễn giả: Trần Hữu Nghĩa*
 
-Phần trình bày về **Tử Vi Đại Việt** - một nền tảng tử vi thế hệ mới kết hợp tri thức truyền thống với công nghệ hiện đại, được xây dựng trên AWS và tích hợp AI Agent.
+Phiên chia sẻ giới thiệu dự án **Tử Vi Đại Việt**, một ứng dụng hiện đại hóa việc lập và luận giải lá số tử vi bằng cách kết hợp tri thức cổ truyền với hạ tầng đám mây không máy chủ (serverless) và trí tuệ nhân tạo.
 
-**Tổng quan sản phẩm:**
-Tử Vi Đại Việt giải quyết vấn đề cố hữu của các dịch vụ xem tử vi truyền thống - phụ thuộc vào chuyên gia, không có khả năng mở rộng và thiếu tính cá nhân hóa - bằng cách đưa tri thức tử vi vào một hệ thống AI có thể phục vụ hàng ngàn người dùng đồng thời.
+**Đặc điểm sản phẩm:**
+Tử Vi Đại Việt giải quyết hạn chế của phương pháp xem truyền thống (tốn thời gian, khó mở rộng quy mô) bằng cách số hóa các quy tắc lập lá số, kết hợp AI để tự động hóa việc đưa ra các luận giải chi tiết và trực quan.
 
-**Kiến trúc AWS:**
-Hệ thống được xây dựng trên nền tảng AWS với các dịch vụ cốt lõi bao gồm: Amazon Bedrock (mô hình AI), Lambda (serverless compute), API Gateway, DynamoDB (lưu trữ dữ liệu người dùng và lá số), S3 (tài nguyên tĩnh), và CloudFront (CDN toàn cầu).
+**Hạ tầng hệ thống trên AWS:**
+Hệ thống sử dụng các dịch vụ cốt lõi: Amazon Bedrock (xử lý ngôn ngữ tự nhiên), AWS Lambda (xử lý logic không máy chủ), API Gateway (quản lý giao tiếp API), DynamoDB (lưu trữ thông tin người dùng và lá số), S3 (lưu trữ phương tiện tĩnh), và CloudFront (phân phối nội dung toàn cầu).
 
-**Flow AI Agent:**
-AI Agent tiếp nhận thông tin ngày giờ sinh của người dùng → tính toán lá số tử vi theo các quy tắc truyền thống được mã hóa → kết hợp với mô hình ngôn ngữ lớn (LLM) để sinh ra phân tích cá nhân hóa, có ngữ cảnh và dễ hiểu → trả kết quả về người dùng qua giao diện web.
+**Quy trình hoạt động của AI Agent:**
+Hệ thống tiếp nhận thông tin đầu vào → tính toán lá số theo các quy tắc truyền thống → chuyển dữ liệu lá số sang Amazon Bedrock/LLM để biên soạn báo cáo luận giải bằng ngôn ngữ tự nhiên, dễ hiểu → hiển thị kết quả trên giao diện web.
 
-**Demo:**
-Hệ thống có thể luận giải vận mệnh, tính cách, sự nghiệp và tình duyên dựa trên lá số tử vi - được trình bày dưới dạng ngôn ngữ tự nhiên thay vì các thuật ngữ chuyên môn khó hiểu.
-
-> *Điểm thú vị: Việc kết hợp tri thức truyền thống có chiều sâu hàng ngàn năm với công nghệ AI hiện đại cho thấy AI không chỉ phục vụ lĩnh vực công nghệ - mà có thể ứng dụng vào bất kỳ lĩnh vực nào có đủ dữ liệu và quy tắc được mã hóa.*
+**Giá trị thực tiễn:**
+Dự án cho thấy công nghệ AI và điện toán đám mây hoàn toàn có thể ứng dụng vào việc bảo tồn và phổ biến các tri thức truyền thống nếu các quy tắc của lĩnh vực đó được số hóa một cách bài bản.
 
 ---
 
 #### 5. The Hidden Iceberg of a Project: DevOps Before Disaster
 *Diễn giả: Trần Minh Quân*
 
-Sử dụng mô hình tảng băng trôi để chỉ ra những vấn đề DevOps ẩn sâu bên dưới bề mặt - những thứ thực sự gây ra thảm họa dự án, không phải các triệu chứng hiển hiện.
+Diễn giả sử dụng hình ảnh tảng băng trôi để minh họa cách các vấn đề vận hành tiềm ẩn dưới bề mặt dự án phần mềm trực tiếp dẫn đến những thất bại trong việc bàn giao sản phẩm.
 
-**Mô hình tảng băng dự án:**
+**Mô hình tảng băng trôi trong quản lý dự án:**
+- **Phần nổi (Triệu chứng bên ngoài):** Trễ hạn bàn giao, phát sinh nhiều lỗi trên môi trường production, lỗi triển khai hệ thống và sự mệt mỏi của đội ngũ phát triển.
+- **Phần chìm (Nguyên nhân cốt lõi):** Yêu cầu dự án không rõ ràng, sự thiếu gắn kết giữa các bộ phận, quy trình bàn giao thủ công và phản hồi chậm trễ.
 
-*Phần nổi - Triệu chứng thấy được:*
-Trễ deadline, lỗi production, triển khai thất bại, khách hàng phàn nàn, đội ngũ burnout.
+**Giá trị cốt lõi của DevOps:**
+DevOps không đơn thuần là việc áp dụng các công cụ kỹ thuật (Docker, Kubernetes, CI/CD). Giá trị thực sự nằm ở sự đồng bộ giữa ba yếu tố: **Con người, Quy trình và Công nghệ**, trong đó giao tiếp nội bộ là quan trọng nhất.
 
-*Phần chìm - Nguyên nhân gốc rễ:*
-Yêu cầu mơ hồ, lỗ hổng giao tiếp, các nhóm làm việc cô lập (siloed teams), thiếu tinh thần trách nhiệm, quy trình thủ công, vòng phản hồi chậm.
+**Bảng đối chiếu vấn đề vận hành và giải pháp DevOps:**
+| Vấn đề vận hành | Giải pháp DevOps tương ứng |
+|---|---|
+| Thiếu sự phối hợp và chia sẻ thông tin giữa các nhóm | Xây dựng văn hóa cộng tác và chia sẻ trách nhiệm |
+| Triển khai và cấu trúc hệ thống thủ công, tốn thời gian | Tự động hóa quy trình (CI/CD pipelines, Infrastructure as Code) |
+| Phát hiện lỗi muộn trong chu kỳ phát triển | Tích hợp quy trình giám sát liên tục và kiểm thử tự động |
+| Lặp lại các lỗi triển khai trước đó | Tổ chức họp rút kinh nghiệm (Post-mortem) và cải tiến liên tục |
 
-**Tư duy DevOps đúng đắn:**
-DevOps không phải là bộ công cụ (Docker, CI/CD, Terraform...). Cốt lõi của DevOps nằm ở **Con người - Quy trình - Công nghệ**. Giao tiếp và sự tin tưởng là thứ không thể tự động hóa.
-
-**Nguyên tắc DevOps giải quyết từng vấn đề chìm:**
-
-| Vấn đề (phần chìm) | Giải pháp DevOps |
-|--------------------|-----------------|
-| Giao tiếp kém / Nhóm cô lập | Hợp tác & chia sẻ trách nhiệm |
-| Quy trình thủ công | Tự động hóa (CI/CD, IaC) |
-| Phản hồi chậm / Phát hiện lỗi muộn | Phản hồi nhanh (Monitoring, Continuous Integration) |
-| Lỗi lặp lại | Cải tiến liên tục (Retrospectives, học từ thất bại) |
-
-> *"Đừng chỉ chữa triệu chứng nổi trên mặt nước. Hãy lặn xuống và sửa tận gốc - đó mới là DevOps thực sự."*
+> *"Đừng chỉ tập trung xử lý các triệu chứng bề mặt. Hãy tập trung tối ưu hóa toàn bộ quy trình vận hành hệ thống—đó mới là nơi tạo ra sự ổn định thực sự."*
 
 ---
 
 #### 6. The Iceberg of Procrastination – When "Laziness" Is Just the Tip of Fear
-*Diễn giả: Khắc Uy Phạm - Sinh viên năm 3, Đại học Việt Đức (VGU)*
+*Diễn giả: Khắc Uy Phạm*
 
-Một góc nhìn khác biệt về sự trì hoãn: không phải do lười biếng hay quản lý thời gian kém, mà thực chất là **quản lý cảm xúc**.
+Diễn giả đưa ra góc nhìn mới về sự trì hoãn, chứng minh rằng đây chủ yếu là vấn đề kiểm soát cảm xúc thay vì do lười biếng hay thiếu kỹ năng quản lý thời gian.
 
-**Mô hình tảng băng của sự trì hoãn:**
+**Mô hình tảng băng trì hoãn:**
+- **Phần nổi (Hành vi dễ thấy):** Các hoạt động gây phân tâm như lướt mạng xã hội và khất lần công việc.
+- **Phần chìm (Cảm xúc tiềm ẩn):**
+  - **Nỗi sợ không đủ tốt**: Tránh né thực hiện công việc vì sợ sản phẩm tạo ra không hoàn hảo.
+  - **Nỗi sợ bị đánh giá**: Ngại công khai mã nguồn hoặc chia sẻ sản phẩm vì sợ nhận lại phản hồi tiêu cực.
+  - **Cơ chế tự vệ**: Cố tình trì hoãn chuẩn bị để nếu kết quả không tốt, bản thân có lý do đổ lỗi cho việc thiếu thời gian thay vì thiếu năng lực.
 
-*Phần nổi (20-30%) - Biểu hiện thấy được:*
-Lướt TikTok, Facebook; tắt báo thức; tự hẹn "để mai làm".
+**Vòng lặp của sự trì hoãn:**
+Nhiệm vụ khó khăn gây ra lo lắng → tâm trí tìm kiếm sự giải tỏa tạm thời qua việc phân tâm → dẫn đến cảm giác tội lỗi và áp lực tăng lên → tiếp tục kích hoạt hành vi tránh né.
 
-*Phần chìm (70-80%) - Nỗi sợ ẩn bên trong:*
-- **Sợ không đủ tốt**: Não bộ tự trốn vào TikTok để giảm tải cảm giác quá sức.
-- **Sợ bị phán xét**: Giữ code trong ổ cứng, không dám đẩy lên GitHub.
-- **Sợ thất bại**: "Nếu tôi chưa thử hết sức, tôi có thể tự an ủi rằng tôi thất bại vì chưa cố."
+**Giải pháp khắc phục:**
+- **Nhận diện cảm xúc**: Thay vì tự trách "mình thật lười biếng," hãy thừa nhận "mình đang cảm thấy áp lực trước độ phức tạp của công việc này."
+- **Quy tắc 5 phút**: Cam kết thực hiện công việc trong 5 phút đầu tiên (ví dụ: viết vài dòng code hoặc đọc một trang tài liệu) để vượt qua rào cản tâm lý ban đầu.
 
-**Vòng lặp tội lỗi:**
-Gặp việc khó → Né tránh → Giải tỏa tạm thời → Tội lỗi & tự trách → Mệt mỏi & căng thẳng → Tiếp tục trì hoãn.
-
-**Giải pháp thực hành:**
-- **Bước 1 - Gọi tên nỗi sợ**: Thay vì tự trách "tôi lười", hãy thừa nhận "tôi đang sợ mình không đủ tốt". Gọi tên đúng mới giải quyết đúng.
-- **Bước 2 - Quy tắc 5 phút**: Không cần ép hoàn thành cả dự án lớn. Bắt đầu bằng việc nhỏ nhất trong 5 phút - viết 3 dòng code, đọc 1 trang tài liệu - để tạo đà.
-
-> *"Hành động tạo ra sự tự tin, chứ không phải có tự tin rồi mới hành động. GO BUILD. Thất bại nhanh, học nhanh hơn."*
+> *"Hành động tạo ra sự tự tin chứ không phải ngược lại. Hãy bắt đầu từ những việc nhỏ, cải tiến dần và học hỏi từ quá trình thực hiện."*
 
 ---
 
 ### Bài Học Rút Ra
 
-#### Về kỹ năng kỹ thuật
-- **Học không cần tốn tiền**: Cloud Quest + Floci là lộ trình hoàn chỉnh để thành thạo AWS từ zero mà không lo hóa đơn.
-- **DevOps là con người**: Công cụ tốt nhất cũng vô nghĩa nếu giao tiếp và quy trình không được giải quyết trước.
-- **AI + domain knowledge**: Tử Vi Đại Việt chứng minh AI có thể ứng dụng vào bất kỳ lĩnh vực nào - quan trọng là dữ liệu và quy tắc phải được mã hóa đúng.
+#### Về kỹ năng chuyên môn
+- **Học tập tối ưu chi phí**: Các công cụ như AWS Cloud Quest và Floci giúp người học tiếp cận kiến thức đám mây một cách hiệu quả mà không lo ngại về chi phí hạ tầng.
+- **Văn hóa DevOps**: Vận hành hệ thống thành công phụ thuộc phần lớn vào quy trình và sự hợp tác của con người, công cụ chỉ đóng vai trò hỗ trợ.
+- **Ứng dụng AI**: Dự án tử vi minh họa khả năng của AI trong việc chuyển đổi các kiến thức chuyên biệt thành các sản phẩm phần mềm có khả năng mở rộng tốt.
 
-#### Về tư duy và thái độ
-- **Trì hoãn không phải lười biếng** - đó là nỗi sợ chưa được gọi tên. Giải pháp không phải ép bản thân, mà là thừa nhận và bắt đầu nhỏ.
-- **Tự tin là kỹ năng có thể luyện tập** - tích lũy từ những hành động nhỏ, không phải chờ cảm thấy sẵn sàng.
-- **Hackathon dạy những thứ không có trong sách**: Áp lực thực tế, quyết định nhanh, và sức mạnh của sự ăn ý trong đội nhóm.
+#### Về tư duy và thái độ học tập
+- **Kiểm soát trì hoãn**: Hiểu được bản chất tâm lý của sự trì hoãn giúp chúng ta giải quyết từ gốc rễ thay vì ép buộc bản thân làm việc quá sức.
+- **Tích lũy tự tin**: Sự tự tin được hình thành thông qua quá trình kiên trì thực hiện những hành động nhỏ hàng ngày, không phải chờ đợi đến khi sẵn sàng.
+- **Học hỏi qua thực tiễn**: Các cuộc thi hackathon mang lại trải nghiệm quý giá về khả năng làm việc nhóm, xây dựng sản phẩm nhanh và giải quyết vấn đề dưới áp lực thời gian.
 
-#### Về hành trình cá nhân
-- Lần đầu tiên đứng trên sân khấu với tư cách diễn giả là một trải nghiệm hoàn toàn khác so với ngồi nghe. Cảm giác truyền đạt kiến thức và nhận phản hồi trực tiếp từ người nghe là điều không thể học từ sách vở.
+#### Về cảm nhận cá nhân
+- Việc lắng nghe các chủ đề đa dạng từ hạ tầng không máy chủ, quy trình DevOps đến tâm lý học giúp tôi nhận ra mối liên kết chặt chẽ giữa năng lực chuyên môn và tư duy cá nhân trong lĩnh vực kỹ thuật.
 
 ---
 
 ### Cảm Nhận Của Bản Thân
 
-Meet Up lần này đặc biệt hơn các event trước ở một điểm: mình không chỉ ngồi nghe, mà còn đứng lên chia sẻ. Chuẩn bị cho một buổi trình bày kỹ thuật trước cộng đồng đòi hỏi mình phải hiểu thật sâu, không chỉ là biết qua. Đó là một áp lực tốt.
+Buổi Meet Up đã mang lại cho tôi nhiều động lực học tập. Sự kiện giúp tôi có cái nhìn toàn diện hơn về cách ứng dụng công nghệ đám mây vào thực tế, đồng thời hiểu rõ hơn về các yếu tố con người như khả năng giao tiếp, sự tự tin và quản lý cảm xúc trong các dự án công nghệ.
 
-Nghe các diễn giả khác chia sẻ - từ DevOps ẩn dưới bề mặt dự án, đến tâm lý trì hoãn, đến hành trình hackathon - mình nhận ra một điểm chung: **ai cũng đang vừa làm vừa học, không ai chờ đến khi sẵn sàng hoàn toàn mới bắt đầu**.
+Các phiên chia sẻ nhắc nhở tôi rằng mọi lập trình viên đều đang trong quá trình học hỏi và hoàn thiện bản thân. Chờ đợi sự hoàn hảo trước khi bắt đầu là một sai lầm; cách hiệu quả nhất là bắt đầu thực hiện và cải tiến dần trong quá trình làm.
 
 ---
 
