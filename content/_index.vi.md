@@ -25,7 +25,7 @@ chapter: false
 
 &emsp; **Thời gian thực tập:** Từ ngày 20/04/2026 đến ngày 15/07/2026
 
-![Ảnh đại diện của bạn]("\images\avatar1.png")
+![Ảnh đại diện của bạn](/images/avatar1.png)
 
 ---
 
@@ -48,7 +48,7 @@ chapter: false
 
 &emsp; **Thời gian thực tập:** Từ ngày 20/04/2026 đến ngày 15/07/2026
 
-![Ảnh đại diện sinh viên 2]("\images\avatar2.jpg")
+![Ảnh đại diện sinh viên 2](/images/avatar2.jpg)
 
 ---
 
@@ -71,7 +71,7 @@ chapter: false
 
 &emsp; **Thời gian thực tập:** Từ ngày 20/04/2026 đến ngày 15/07/2026
 
-![Ảnh đại diện sinh viên 3]("\images\avatar3.jpg")
+![Ảnh đại diện sinh viên 3](/images/avatar3.jpg)
 
 ---
 
@@ -94,7 +94,7 @@ chapter: false
 
 &emsp; **Thời gian thực tập:** Từ ngày 20/04/2026 đến ngày 15/07/2026
 
-![Ảnh đại diện sinh viên 4]("\images\avatar4.jpg")
+![Ảnh đại diện sinh viên 4](/images/avatar4.jpg)
 
 ---
 
@@ -117,7 +117,7 @@ chapter: false
 
 &emsp; **Thời gian thực tập:** Từ ngày 20/04/2026 đến ngày 15/07/2026
 
-![Ảnh đại diện sinh viên 5]("\images\avatar5.jpg")
+![Ảnh đại diện sinh viên 5](/images/avatar5.jpg)
 
 ### Nội dung báo cáo
 
