@@ -107,7 +107,7 @@ chapter: false
 
 &emsp; **Trường:** Đại học Công Nghệ TP.HCM
 
-&emsp; **Ngành:** Khoa học dữ liệu
+&emsp; **Ngành:** Công Nghệ Phần Mềm
 
 &emsp; **Lớp:** 22DTHG8
 

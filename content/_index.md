@@ -107,7 +107,7 @@ chapter: false
 
 &emsp; **University:** Ho Chi Minh City University of Technology
 
-&emsp; **Major:** Data Science
+&emsp; **Major:** Software Engineerring
 
 &emsp; **Class:** 22DTHG8
 
