@@ -1,5 +1,5 @@
 # baseURL = "https://workshop-sample.fcjuni.com/"
-baseURL = "https://HTLinh0604.github.io/cloud-ai-journey-linhhuynh/"
+baseURL = "https://trantrongthanh115.github.io/AWS/"
 relativeURLs = true
 canonifyURLs = true
 defaultContentLanguage = "en"
@@ -21,6 +21,7 @@ home = [ "HTML", "RSS", "JSON"]
   showVisitedLinks = true
   disableBreadcrumb = false
   disableNextPrev = false
+  disableInlineCopyToClipBoard = true
   
 [Languages]
 [Languages.en]
