@@ -10,15 +10,15 @@ pre: " <b> 5.3.1. </b> "
 
 The data pipeline prepared for machine learning modeling runs in two sequential phases:
 
-```mermaid
+{{<mermaid>}}
 graph TD
-    RDS[(Central RDS)] -->|1. Extract| PythonJob[de-fashion-rds-extract]
+    RDS[Central RDS] -->|1. Extract| PythonJob[de-fashion-rds-extract]
     PythonJob -->|Save as Parquet| S3Landing[S3 Landing Zone]
     S3Landing -->|2. Ingest| SparkJob[glue_feature_engineering.py]
     SparkJob -->|Compute Lags, Rolling, Velocity| ProcessedFeatures[Feature Calculations]
-    ProcessedFeatures -->|3. Parallel Writes| CentralDB[(Central RDS)]
-    ProcessedFeatures -->|3. Parallel Writes| TrainingDB[(Training RDS)]
-```
+    ProcessedFeatures -->|3. Parallel Writes| CentralDB[Central RDS]
+    ProcessedFeatures -->|3. Parallel Writes| TrainingDB[Training RDS]
+{{</mermaid>}}
 
 #### Detailed Operations:
 1. **Raw Data Extraction (Extract):** A Python Shell job queries the `fashion-rds` central database, fetches raw transactions, products, and stores tables, and dumps them as compressed Parquet files to an S3 staging area.

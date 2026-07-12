@@ -12,7 +12,7 @@ The heavy-duty computations are calculated using **Apache Spark** running on **A
 
 ##### Core PySpark Snippets:
 
-###### 1. Lag Sales Features:
+#### 1. Lag Sales Features:
 Window functions partition by outlet and item (`store_id`, `sku`) and sort by time index to calculate lagged history:
 ```python
 w_sku = Window.partitionBy('store_id', 'sku').orderBy('date_int')
@@ -22,7 +22,7 @@ daily = daily \
     .withColumn('lag_7d', F.lag('qty', 7, 0.0).over(w_sku).cast(FloatType()))
 ```
 
-###### 2. Rolling averages:
+#### 2. Rolling averages:
 Computes average sales and sales deviation over a moving 7-day lookback window:
 ```python
 w_roll7 = Window.partitionBy('store_id', 'sku') \
@@ -37,7 +37,7 @@ daily = daily \
     )
 ```
 
-###### 3. Sales Velocity:
+#### 3. Sales Velocity:
 Measures active days and sales velocities in 30-day and 7-day windows:
 ```python
 w30 = Window.partitionBy('store_id','sku').orderBy('date_int').rangeBetween(-30,-1)
@@ -52,7 +52,7 @@ daily = daily \
     ).drop('_q30')
 ```
 
-###### 4. Write to Targets:
+#### 4. Write to Targets:
 ```python
 # Write to Central DB
 final_df.coalesce(4).write.jdbc(

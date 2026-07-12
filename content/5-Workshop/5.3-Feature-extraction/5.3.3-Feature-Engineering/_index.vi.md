@@ -12,7 +12,7 @@ Tác vụ chính được thực hiện bằng **Apache Spark** trên **AWS Glue
 
 ##### Phân đoạn mã nguồn Spark SQL cốt lõi:
 
-###### 1. Trích xuất đặc trưng trễ (Lags):
+#### 1. Trích xuất đặc trưng trễ (Lags):
 Tính toán lượng hàng đã bán trong quá khứ ($t-1$ và $t-7$) để mô hình nắm bắt được xu hướng tiêu thụ gần nhất:
 ```python
 w_sku = Window.partitionBy('store_id', 'sku').orderBy('date_int')
@@ -22,7 +22,7 @@ daily = daily \
     .withColumn('lag_7d', F.lag('qty', 7, 0.0).over(w_sku).cast(FloatType()))
 ```
 
-###### 2. Tính trung bình trượt (Rolling statistics):
+#### 2. Tính trung bình trượt (Rolling statistics):
 Tính trung bình doanh số và độ lệch chuẩn doanh số của sản phẩm trong vòng 7 ngày gần nhất:
 ```python
 w_roll7 = Window.partitionBy('store_id', 'sku') \
@@ -37,7 +37,7 @@ daily = daily \
     )
 ```
 
-###### 3. Tính tốc độ bán hàng (Sales Velocity):
+#### 3. Tính tốc độ bán hàng (Sales Velocity):
 Đo lường số ngày sản phẩm bán được hàng trong vòng 30 ngày và tính tỷ lệ bán hàng trung bình mỗi ngày:
 ```python
 w30 = Window.partitionBy('store_id','sku').orderBy('date_int').rangeBetween(-30,-1)
@@ -52,7 +52,7 @@ daily = daily \
     ).drop('_q30')
 ```
 
-###### 4. Tải dữ liệu đặc trưng xuống cả hai Databases qua JDBC:
+#### 4. Tải dữ liệu đặc trưng xuống cả hai Databases qua JDBC:
 ```python
 # Ghi vào Central DB
 final_df.coalesce(4).write.jdbc(
