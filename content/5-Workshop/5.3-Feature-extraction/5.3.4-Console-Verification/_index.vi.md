@@ -21,4 +21,4 @@ pre: " <b> 5.3.4. </b> "
 ##### Hướng dẫn chụp ảnh minh chứng:
 * Chụp màn hình danh sách jobs hiển thị cả 2 tác vụ trên và lưu vào thư mục dự án của bạn theo đường dẫn: `static/images/5-Workshop/5.3-Feature-extraction/glue-jobs.png` và xóa comment dòng dưới đây.
 
-<!-- ![Glue Jobs](/images/5-Workshop/5.3-Feature-extraction/glue-jobs.png) -->
+![Glue Jobs](/images/5-Workshop/5.3-Feature-extraction/glue-jobs.png)

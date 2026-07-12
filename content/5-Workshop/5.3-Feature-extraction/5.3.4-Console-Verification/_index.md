@@ -21,4 +21,4 @@ Validate Glue job executions and check details:
 ##### Screenshot Guide:
 * Capture a screenshot of the Glue Jobs console page showing these jobs and save the image at: `static/images/5-Workshop/5.3-Feature-extraction/glue-jobs.png` and remove the comment markdown tags.
 
-<!-- ![Glue Jobs](/images/5-Workshop/5.3-Feature-extraction/glue-jobs.png) -->
+![Glue Jobs](/images/5-Workshop/5.3-Feature-extraction/glue-jobs.png)
