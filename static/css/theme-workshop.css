@@ -226,3 +226,15 @@ div.notices.info p {
   border-top: 30px solid #fd9827;
   background: #fff2db;
 }
+
+/* Custom styling to make student/member avatars uniform in size and shape */
+#body img[src*="avatar"] {
+  width: 160px !important;
+  height: 160px !important;
+  object-fit: cover !important;
+  border-radius: 50% !important;
+  border: 3px solid #fd9827 !important;
+  display: block !important;
+  margin: 1.5rem 0 2rem 0 !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15) !important;
+}
