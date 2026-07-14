@@ -28,6 +28,10 @@ Về tác phong, tôi luôn cố gắng hoàn thành tốt nhiệm vụ, tuân t
 | 11  | **Đóng góp vào dự án/tổ chức**      | Hiệu quả công việc, sáng kiến cải tiến, ghi nhận từ team                                         | ✅   | ☐   | ☐          |
 | 12  | **Tổng thể**                        | Đánh giá chung về toàn bộ quá trình thực tập                                                     | ✅   | ☐   | ☐          |
 
+### Minh chứng chi tiết đánh giá tiêu biểu
+
+*   **Hợp tác nhóm (Teamwork) - Tốt:** Lãnh đạo một nhóm đòi hỏi lắng nghe nhiều như chỉ đạo. Tôi cố gắng tạo môi trường để mọi người thoải mái chia sẻ ý kiến và đặt câu hỏi. Khi một thành viên bị mắc kẹt, tôi làm việc cùng họ thay vì chỉ đưa ra câu trả lời, điều này giúp cả nhóm cùng phát triển.
+
 ### Cần cải thiện
 
 * Nâng cao kỹ năng giao tiếp và thuyết trình để truyền đạt các khái niệm kiến trúc đám mây hoặc mô hình dữ liệu phức tạp một cách cô đọng và dễ hiểu hơn cho các bên liên quan.

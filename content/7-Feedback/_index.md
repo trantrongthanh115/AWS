@@ -33,7 +33,7 @@ The company provides an internship allowance and offers flexible working hours w
 ### Additional Questions
 
 * **What did you find most satisfying during your internship?**  
-  Being able to work directly with professional AWS Solution Architects, having access to real AWS sandboxes to deploy infrastructure (RDS, Glue, EC2, Lambda), and successfully building a complete, high-availability storefront coupled with an automated machine learning forecasting pipeline from scratch.
+  Being able to work directly with professional AWS Solution Architects, having access to real AWS sandboxes to deploy infrastructure (RDS, Glue, EC2, Lambda, Cognito, CloudFront), and successfully building a complete, high-availability Web Portal with role-based access control (RBAC) coupled with an automated machine learning forecasting pipeline on a production EC2 instance.
 * **What do you think the company should improve for future interns?**  
   Organizing more technical workshops on system troubleshooting, cost optimization (FinOps), and production-grade monitoring at the beginning of the internship to help interns ramp up faster.
 * **If recommending to a friend, would you suggest they intern here? Why or why not?**  

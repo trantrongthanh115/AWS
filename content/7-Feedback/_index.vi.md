@@ -33,7 +33,7 @@ Công ty có hỗ trợ phụ cấp thực tập và tạo điều kiện về t
 ### Một số câu hỏi khác
 
 * **Điều bạn hài lòng nhất trong thời gian thực tập?**  
-  Được làm việc và học hỏi trực tiếp từ các kỹ sư giải pháp (Solution Architects) hàng đầu tại AWS, được cấp tài khoản sandbox thực hành trực tiếp các dịch vụ điện toán đám mây (RDS, Glue, EC2, Lambda) và tự tay xây dựng thành công pipeline trích xuất dữ liệu, kỹ thuật đặc trưng và huấn luyện mô hình dự báo hoàn chỉnh.
+  Được làm việc và học hỏi trực tiếp từ các kỹ sư giải pháp (Solution Architects) hàng đầu tại AWS, được cấp tài khoản sandbox thực hành trực tiếp các dịch vụ điện toán đám mây (RDS, Glue, EC2, Lambda, Cognito, CloudFront) và tự tay xây dựng thành công pipeline trích xuất dữ liệu, huấn luyện mô hình dự báo cũng như triển khai hoàn chỉnh ứng dụng Web Portal quản trị phân quyền (RBAC) trên môi trường EC2 thực tế.
 * **Điều bạn nghĩ công ty cần cải thiện cho các thực tập sinh sau?**  
   Nên tổ chức thêm các buổi đào tạo/workshop sớm về chủ đề FinOps (tối ưu hóa chi phí đám mây), xử lý lỗi hệ thống (troubleshooting) và bảo mật hệ thống ở đầu kỳ thực tập để các bạn bắt nhịp dự án nhanh hơn.
 * **Nếu giới thiệu cho bạn bè, bạn có khuyên họ thực tập ở đây không? Vì sao?**  

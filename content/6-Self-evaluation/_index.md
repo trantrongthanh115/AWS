@@ -28,6 +28,10 @@ To objectively reflect on my internship period, I would like to evaluate myself 
 | 11  | **Contribution to project/team**    | Work effectiveness, innovative ideas, recognition from the team                                  | ✅    | ☐    | ☐       |
 | 12  | **Overall**                         | General evaluation of the entire internship period                                               | ✅    | ☐    | ☐       |
 
+### Detailed Evaluation Highlights
+
+*   **Teamwork - Good:** Leading a team requires listening as much as directing. I try to create an environment where everyone feels comfortable sharing ideas and asking questions. When a member is stuck, I work alongside them instead of just giving answers, which helps the whole team grow together.
+
 ### Needs Improvement
 
 * Further improve communication and presentation skills to explain complex cloud architectures and data models more concisely to business stakeholders.
