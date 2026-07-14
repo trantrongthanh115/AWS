@@ -57,4 +57,6 @@ CREATE TABLE transactions (
     date DATE,
     qty INT
 );
-```
+```
+
+These baseline tables will be extracted by AWS Glue daily to compile time-series features.

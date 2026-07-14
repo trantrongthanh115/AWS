@@ -48,4 +48,4 @@ Cơ sở dữ liệu trung tâm lưu trữ thông tin đơn hàng, giao dịch, 
 
 #### Minh chứng thực tế trên AWS Console:
 
-![Central RDS Database](/AWS/images/5-Workshop/5.2-Database-setup/rds-console.png)
+![Central RDS Database](/images/5-Workshop/5.2-Database-setup/rds-console.png)

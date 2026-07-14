@@ -8,19 +8,35 @@ pre: " <b> 5.2.3. </b> "
 
 ### 5.2.3. Cấu hình Mạng và Bảo mật (Security & Network Groups)
 
-Cả hai cơ sở dữ liệu đều được thiết lập cấu hình mạng và bảo mật nhằm đảm bảo các dịch vụ trung gian (AWS Glue, EC2, Lambda) có thể kết nối an toàn nhưng vẫn ngăn chặn các truy cập trái phép.
+Để đảm bảo an toàn tối đa cho dữ liệu doanh nghiệp đồng thời cho phép các thành phần khác kết nối, cấu hình bảo mật được thiết lập chặt chẽ thông qua các quy tắc của **VPC Security Group**:
 
-* **Publicly Accessible:** Đặt là `True` để cho phép các client truy vấn từ bên ngoài VPC.
-* **Security Group (`sg-0fecd1d2df90f2a69`):**
-  * **Inbound Rules:**
-    * Cổng `5432` / Protocol TCP: Cho phép truy cập từ địa chỉ IP cá nhân của nhà phát triển (Dành cho pgAdmin/DBeaver).
-    * Cổng `5432` / Protocol TCP: Cho phép kết nối từ máy chủ EC2 `ML-Forecast-Server` (`sg-0579af9926812195b`).
-    * Cổng `5432` / Protocol TCP: Tự tham chiếu chính nó (Self-referencing rule) cho phép tác vụ AWS Glue kết nối JDBC an toàn.
-  * **Outbound Rules:** Cho phép tất cả lưu lượng ra ngoài (Mặc định).
-* **Mã hóa lưu trữ (Storage Encryption):** Kích hoạt mã hóa ổ đĩa thông qua khóa quản lý khóa **AWS KMS** mặc định (`fe12be50-a2cf-44d1-a1da-3ce27e40686d`).
+* **Mã hóa lưu trữ (Storage Encryption):** Bật mã hóa ổ đĩa cho cả hai cơ sở dữ liệu sử dụng khóa mặc định của **AWS KMS** (`fe12be50-a2cf-44d1-a1da-3ce27e40686d`).
+* **Security Group định tuyến cổng:** `sg-0fecd1d2df90f2a69`
 
-##### Hướng dẫn chụp ảnh minh chứng hoạt động:
-* Đăng nhập **AWS Management Console** -> **RDS** -> **Databases**. Chụp màn hình danh sách cơ sở dữ liệu của bạn hiển thị cả `fashion-rds` và `training-db` với trạng thái **Available**.
-* Lưu hình ảnh vào thư mục dự án của bạn theo đường dẫn: `static/AWS/images/5-Workshop/5.2-Database-setup/rds-console.png` và xóa comment dòng dưới trong file.
+---
 
-<!-- ![RDS Console](/AWS/images/5-Workshop/5.2-Database-setup/rds-console.png) -->
+#### Hướng dẫn chi tiết cấu hình Inbound Rules cho RDS:
+
+1. **Mở EC2 Console:** Trên thanh công cụ AWS Console, truy cập dịch vụ **EC2**.
+2. **Chọn Security Groups:** Nhấp vào **Security Groups** trong mục **Network & Security** ở menu điều hướng bên trái.
+3. **Tìm kiếm Security Group:** Chọn Security Group tương ứng của RDS instance (ví dụ: `sg-0fecd1d2df90f2a69`).
+4. **Chỉnh sửa Inbound Rules:** Nhấp chọn tab **Inbound rules** ở nửa dưới màn hình và bấm nút **Edit inbound rules**.
+5. **Cấu hình 3 quy tắc kết nối bắt buộc:**
+   * **Quy tắc 1 (Truy cập của nhà phát triển):** 
+     * **Type:** Chọn `PostgreSQL` (Cổng mặc định `5432`).
+     * **Source:** Chọn **My IP** (Tự động điền IP public hiện tại của máy tính bạn). Quy tắc này cho phép pgAdmin/DBeaver kết nối trực tiếp.
+   * **Quy tắc 2 (Truy cập từ Máy chủ huấn luyện EC2):**
+     * **Type:** Chọn `PostgreSQL` (Cổng mặc định `5432`).
+     * **Source:** Chọn **Custom** và nhập mã ID Security Group của máy chủ `ML-Forecast-Server` (`sg-0579af9926812195b`).
+   * **Quy tắc 3 (Truy cập cho AWS Glue kết nối JDBC):**
+     * **Type:** Chọn `PostgreSQL` (Cổng mặc định `5432`).
+     * **Source:** Chọn **Custom** và nhập lại chính mã ID Security Group này (`sg-0fecd1d2df90f2a69` - Self-referencing rule).
+6. **Lưu cấu hình:** Nhấp vào nút **Save rules** để áp dụng.
+
+---
+
+#### Minh chứng hoạt động trên AWS Console:
+
+Dưới đây là hình ảnh danh sách cơ sở dữ liệu RDS hiển thị trạng thái hoạt động bình thường trên AWS Management Console:
+
+![RDS Console](/images/5-Workshop/5.2-Database-setup/rds-console.png)

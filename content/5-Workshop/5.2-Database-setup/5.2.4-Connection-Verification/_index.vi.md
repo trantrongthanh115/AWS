@@ -6,34 +6,57 @@ chapter: false
 pre: " <b> 5.2.4. </b> "
 ---
 
-### 5.2.4. Kiểm tra Kết nối Cơ sở dữ liệu
+### 5.2.4. Kiểm tra Kết nối và Thiết lập Bảng mẫu
 
-Sau khi khởi tạo và cấu hình Security Group thành công, chúng ta cần xác minh kết nối đến cơ sở dữ liệu để đảm bảo các tiến trình phía sau không bị gián đoạn.
+Sau khi hoàn tất khởi động cơ sở dữ liệu và mở các cổng Security Group, bước tiếp theo là xác minh kết nối từ bên ngoài và tiến hành thiết lập cấu trúc bảng nghiệp vụ cơ bản.
 
-#### Cách 1: Sử dụng công cụ Command Line (`psql`)
-Bạn có thể kết nối trực tiếp đến PostgreSQL shell bằng cách chạy các lệnh dưới đây từ terminal máy cá nhân:
+---
 
-##### Kết nối tới Central DB:
+#### Bước 1: Kiểm tra kết nối từ máy phát triển qua CLI (`psql`)
+
+Chạy các lệnh psql sau trong terminal để đảm bảo đường truyền thông suốt:
+
+##### Kết nối tới Central DB (cơ sở dữ liệu nghiệp vụ):
 ```bash
 psql -h fashion-rds.c7846wiue0od.ap-southeast-1.rds.amazonaws.com -p 5432 -U dbadmin -d fashiondb
 ```
 
-##### Kết nối tới Training DB:
+##### Kết nối tới Training DB (cơ sở dữ liệu lưu trữ đặc trưng):
 ```bash
 psql -h training-db.c7846wiue0od.ap-southeast-1.rds.amazonaws.com -p 5432 -U dbadmin -d fashiondb
 ```
-
-Sau khi nhập mật khẩu đăng nhập, nếu shell hiển thị dấu nhắc lệnh `fashiondb=>` tức là kết nối thành công.
+*(Sau khi chạy lệnh, nhập mật khẩu của bạn để kiểm tra dấu nhắc lệnh)*
 
 ---
 
-#### Cách 2: Sử dụng DBeaver hoặc pgAdmin
-1. Mở công cụ quản trị Database Client của bạn.
-2. Tạo kết nối mới (New Connection) chọn **PostgreSQL**.
-3. Điền thông tin kết nối:
-   * **Host:** Điền endpoint tương ứng của database.
-   * **Port:** `5432`
-   * **Database:** `fashiondb`
-   * **Username:** `dbadmin`
-   * **Password:** Mật khẩu tài khoản database.
-4. Bấm **Test Connection** để kiểm tra. Nếu hiển thị trạng thái kết nối thành công, bấm **Finish** để lưu cấu hình.
+#### Bước 2: Thiết lập bảng mẫu trên Central DB (`fashion-rds`)
+
+Sau khi kết nối thành công (sử dụng DBeaver, pgAdmin hoặc CLI), chạy tập lệnh SQL sau trên `fashion-rds` để khởi tạo các bảng nghiệp vụ chính:
+
+```sql
+-- 1. Bảng sản phẩm (products)
+CREATE TABLE products (
+    product_id VARCHAR(50) PRIMARY KEY,
+    product_name VARCHAR(100),
+    category VARCHAR(50),
+    price DECIMAL(10, 2)
+);
+
+-- 2. Bảng cửa hàng (stores)
+CREATE TABLE stores (
+    store_id VARCHAR(50) PRIMARY KEY,
+    store_name VARCHAR(100),
+    city VARCHAR(50)
+);
+
+-- 3. Bảng lịch sử giao dịch (transactions)
+CREATE TABLE transactions (
+    transaction_id VARCHAR(50) PRIMARY KEY,
+    store_id VARCHAR(50) REFERENCES stores(store_id),
+    product_id VARCHAR(50) REFERENCES products(product_id),
+    date DATE,
+    qty INT
+);
+```
+
+Các dữ liệu thô này sẽ được công cụ ETL (AWS Glue) trích xuất hàng ngày để xử lý.

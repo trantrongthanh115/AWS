@@ -48,4 +48,4 @@ The central database storing sales orders, transactions, products, and store dat
 
 #### AWS Console Proof of Operation:
 
-![Central RDS Database](/AWS/images/5-Workshop/5.2-Database-setup/rds-console.png)
+![Central RDS Database](/images/5-Workshop/5.2-Database-setup/rds-console.png)

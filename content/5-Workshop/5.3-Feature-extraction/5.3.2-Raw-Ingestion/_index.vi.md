@@ -8,9 +8,20 @@ pre: " <b> 5.3.2. </b> "
 
 ### 5.3.2. Script Python Trích xuất dữ liệu thô (`de-fashion-rds-extract`)
 
-Tác vụ đầu tiên chạy trên môi trường **Glue Python Shell** sử dụng thư viện `pandas` và `sqlalchemy` để truy vấn trực tiếp cơ sở dữ liệu Postgres nghiệp vụ và ghi file nén Parquet lên S3.
+Tác vụ đầu tiên chạy trên môi trường **AWS Glue Python Shell** để truy vấn trực tiếp cơ sở dữ liệu PostgreSQL nghiệp vụ và kết xuất file nén Parquet lên vùng đệm Landing Zone trên S3.
 
-##### Toàn bộ mã nguồn script trích xuất:
+---
+
+#### Hướng dẫn tạo Glue Job trên AWS Console:
+
+1. **Mở AWS Glue Console:** Truy cập dịch vụ **AWS Glue** trên AWS Console.
+2. **Tạo Job:** Ở danh sách menu bên trái, nhấp vào **ETL jobs** (trong mục **Data Integration and ETL**), sau đó chọn **Spark script editor** hoặc **Python Shell script editor** (chọn **Python Shell**).
+3. **Cấu hình Job Details:**
+   * **Name:** Đặt tên job là `de-fashion-rds-extract`.
+   * **IAM Role:** Chọn role `de-fashion-glue-role` (đã được cấp quyền truy cập S3 và VPC).
+   * **Python version:** Chọn `Python 3.9` hoặc phiên bản mới hơn.
+4. **Nhập Mã nguồn:** Sao chép toàn bộ mã nguồn bên dưới và dán vào trình biên tập code trực tuyến của Glue:
+
 ```python
 import sys
 import pandas as pd
@@ -22,7 +33,7 @@ from awsglue.utils import getResolvedOptions
 args = getResolvedOptions(sys.argv,
     ['db_host','db_port','db_name','db_user','db_pass','s3_bucket'])
 
-# Tạo chuỗi kết nối engine PostgreSQL qua thư viện psycopg2
+# Tạo chuỗi kết nối engine PostgreSQL qua thư viện sqlalchemy
 engine = create_engine(
     f"postgresql+psycopg2://{args['db_user']}:{args['db_pass']}@"
     f"{args['db_host']}:{args['db_port']}/{args['db_name']}"
@@ -44,3 +55,18 @@ stores.to_parquet(f"{base}/stores.parquet", index=False)
 
 print("Extract thanh cong!")
 ```
+
+5. **Cấu hình tham số chạy (Job parameters):** Cuộn xuống phần **Advanced properties** -> **Job parameters** và thêm các cặp Key/Value cụ thể của bạn:
+   * `--db_host`: `fashion-rds.c7846wiue0od.ap-southeast-1.rds.amazonaws.com`
+   * `--db_port`: `5432`
+   * `--db_name`: `fashiondb`
+   * `--db_user`: `dbadmin`
+   * `--db_pass`: *(Mật khẩu database của bạn)*
+   * `--s3_bucket`: `fashion-retail-model-storage`
+6. **Lưu Job:** Nhấp nút **Save** ở góc trên cùng bên phải.
+
+---
+
+#### Minh chứng thực tế trên AWS Console:
+
+![AWS Glue Ingestion Job](/images/5-Workshop/5.3-Feature-extraction/glue-jobs.png)

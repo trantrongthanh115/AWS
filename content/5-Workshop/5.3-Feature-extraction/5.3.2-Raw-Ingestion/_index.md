@@ -69,4 +69,4 @@ print("Extract thanh cong!")
 
 #### AWS Console Proof of Operation:
 
-![AWS Glue Ingestion Job](/AWS/images/5-Workshop/5.3-Feature-extraction/glue-jobs.png)
+![AWS Glue Ingestion Job](/images/5-Workshop/5.3-Feature-extraction/glue-jobs.png)

@@ -6,19 +6,24 @@ chapter: false
 pre: " <b> 5.3.4. </b> "
 ---
 
-### 5.3.4. Minh chứng hoạt động trên AWS Console
+### 5.3.4. Minh chứng hoạt động trích xuất dữ liệu trên AWS Console
 
-Để minh chứng các Glue Jobs chạy thành công và ghi nhận các logs liên quan:
+Sau khi kích hoạt chạy thử nghiệm các Glue Jobs, chúng ta có thể kiểm tra danh sách chạy và xác nhận trạng thái thành công.
 
-#### Các bước thực hiện:
-1. Mở trang quản trị dịch vụ **AWS Glue Studio**.
-2. Chọn **ETL jobs** và nhấp vào danh sách để kiểm tra các run lịch sử của `de-fashion-rds-extract` và `glue_feature_engineering.py`.
-3. Kiểm tra cột **Run status** hiển thị trạng thái **Succeeded** (Thành công).
-4. Nhấp vào **Run details** và chọn xem log trên **Amazon CloudWatch Logs** để thấy thông tin in ra:
-   * Đối với job extract: `Extract thanh cong!`
-   * Đối với job feature: In ra báo cáo chất lượng `[FEATURES] TAT CA FEATURES HOP LE - OK!` và `Tong records: ...`
+---
 
-##### Hướng dẫn chụp ảnh minh chứng:
-* Chụp màn hình danh sách jobs hiển thị cả 2 tác vụ trên và lưu vào thư mục dự án của bạn theo đường dẫn: `static/AWS/images/5-Workshop/5.3-Feature-extraction/glue-jobs.png` và xóa comment dòng dưới đây.
+#### Các bước kiểm tra chạy thành công:
 
-![Glue Jobs](/AWS/images/5-Workshop/5.3-Feature-extraction/glue-jobs.png)
+1. **Mở AWS Glue Studio:** Nhấp vào **ETL jobs** ở menu trái.
+2. **Chọn Job chạy:** Nhấp chọn job `de-fashion-rds-extract` hoặc `glue_feature_engineering.py`.
+3. **Kiểm tra lịch sử chạy (Runs):** Nhấp chọn tab **Runs** ở phần giao diện quản lý của job.
+4. **Kiểm tra trạng thái:** Xác nhận cột **Run status** hiển thị biểu tượng tích xanh lá cây kèm chữ **Succeeded** (Thành công).
+5. **Xem Log:** Nhấp chọn **Output logs** ở phần thông tin chạy để được chuyển hướng sang CloudWatch Logs xem chi tiết thông điệp kết xuất.
+
+---
+
+#### Minh chứng hoạt động trên AWS Console:
+
+Hình ảnh danh sách chạy và trạng thái của các AWS Glue Jobs được chụp trực tiếp trên AWS Management Console:
+
+![Glue Jobs](/images/5-Workshop/5.3-Feature-extraction/glue-jobs.png)

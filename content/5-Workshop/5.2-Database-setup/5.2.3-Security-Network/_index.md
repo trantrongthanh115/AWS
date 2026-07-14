@@ -39,4 +39,4 @@ To ensure robust data protection while enabling necessary integration points, ne
 
 Below is the screenshot showing the RDS instances up and running on the AWS Console:
 
-![RDS Console](/AWS/images/5-Workshop/5.2-Database-setup/rds-console.png)
+![RDS Console](/images/5-Workshop/5.2-Database-setup/rds-console.png)

@@ -32,4 +32,4 @@ The core compute task is run via **Apache Spark** on **AWS Glue** to calculate h
 
 #### AWS Console Proof of Operation:
 
-![AWS Glue Spark Feature Engineering Job](/AWS/images/5-Workshop/5.3-Feature-extraction/glue-jobs.png)
+![AWS Glue Spark Feature Engineering Job](/images/5-Workshop/5.3-Feature-extraction/glue-jobs.png)

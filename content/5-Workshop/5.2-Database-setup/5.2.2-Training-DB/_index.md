@@ -44,4 +44,4 @@ A dedicated training database is deployed independently to store the final proce
 
 #### AWS Console Proof of Operation:
 
-![Training RDS Database](/AWS/images/5-Workshop/5.2-Database-setup/rds-training.png)
+![Training RDS Database](/images/5-Workshop/5.2-Database-setup/rds-training.png)
