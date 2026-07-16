@@ -66,4 +66,4 @@ In this final talk, the speaker shared their personal career progression startin
 
 ### Event Photos
 
-![AWS First Cloud AI Journey Workshop](/images/event3.jpg)
+![AWS First Cloud AI Journey Workshop](/images/event3.JPG)

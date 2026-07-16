@@ -66,4 +66,4 @@ Trong phiên chia sẻ cuối cùng, diễn giả đã chia sẻ câu chuyện t
 
 ### Hình Ảnh Sự Kiện
 
-![AWS First Cloud AI Journey Workshop](/images/event3.jpg)
+![AWS First Cloud AI Journey Workshop](/images/event3.JPG)
