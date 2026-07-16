@@ -19,7 +19,7 @@ This proposal presents the design and end-to-end implementation of a **cloud-nat
 
 The entire pipeline is orchestrated to run daily via Amazon EventBridge, ensuring the forecasting model is always up to date with the latest sales transactions.
 
-> 📌 **System Architecture Diagram:**
+> **System Architecture Diagram:**
 >
 > ![Fashion Retail Web App & ML Pipeline Architecture](/AWS/images/5-Workshop/5.1-Workshop-overview/diagram1.png)
 
