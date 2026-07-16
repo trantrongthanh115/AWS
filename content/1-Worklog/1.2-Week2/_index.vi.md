@@ -1,5 +1,5 @@
 ---
-title: "Ngày 2"
+title: "Tuần 2"
 date: 2026-06-08
 weight: 2
 chapter: false
@@ -8,11 +8,11 @@ pre: " <b> 1.2. </b> "
 
 # Nhật Ký Làm Việc: Giám Sát Chi Phí Nâng Cao, Thiết Lập Cảnh Báo Đa Lớp và Lý Thuyết Hạ Tầng Cơ Bản
 
-> **Ngày 2 - Thứ Hai, ngày 08/06/2026:** Hoàn thành xây dựng hệ thống cảnh báo chi phí đa tầng, thiết lập quy trình xử lý khẩn cấp và nghiên cứu sâu các lý thuyết kiến trúc đám mây và an toàn thông tin trên AWS.
+> **Tuần 2 - Thứ Hai, ngày 08/06/2026:** Hoàn thành xây dựng hệ thống cảnh báo chi phí đa tầng, thiết lập quy trình xử lý khẩn cấp và nghiên cứu sâu các lý thuyết kiến trúc đám mây và an toàn thông tin trên AWS.
 
 ---
 
-### Mục tiêu học tập trong ngày
+### Mục tiêu học tập trong tuần
 
 - Triển khai **Hệ thống giám sát chi phí đa lớp** nhằm chủ động ngăn ngừa phát sinh chi phí.
 - Kích hoạt dịch vụ **Cost Anomaly Detection** kết hợp quy định gắn thẻ tag tài nguyên đồng bộ.
@@ -164,7 +164,7 @@ aws ec2 describe-addresses \
 
 ---
 
-### Bài học rút ra từ Ngày 2
+### Bài học rút ra từ Tuần 2
 
 1. **Phòng thủ chi phí nhiều lớp:** Việc kết hợp ngân sách tĩnh (Budgets), cảnh báo chi phí (Alarms) và giám sát thông minh (Anomaly Detection) giúp bảo vệ tài khoản tối đa trước các rủi ro phát sinh hóa đơn lớn.
 2. **Kỷ luật tagging:** Gắn thẻ tag tài nguyên là điều kiện bắt buộc để quản lý tài chính đám mây hiệu quả.

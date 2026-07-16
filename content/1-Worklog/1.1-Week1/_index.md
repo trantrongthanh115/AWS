@@ -1,5 +1,5 @@
 ---
-title: "Day 1"
+title: "Week 1"
 date: 2026-06-01
 weight: 1
 chapter: false
@@ -8,11 +8,11 @@ pre: " <b> 1.1. </b> "
 
 # Work Log: Account Setup, AWS Credits, and Core Guided Labs
 
-> **Day 1 - Monday, June 01, 2026:** Activated the AWS student account, requested initial credits, and successfully completed 5 foundational console tasks to secure additional promotional credits.
+> **Week 1 - Monday, June 01, 2026:** Activated the AWS student account, requested initial credits, and successfully completed 5 foundational console tasks to secure additional promotional credits.
 
 ---
 
-### Objectives for the Day
+### Objectives for the Week
 
 - Register and configure a new AWS account, obtaining **$100 in initial credits** from the program.
 - Complete **5 practical tasks** on the AWS Console to earn an extra **$100 credit** ($20 per task).
@@ -129,7 +129,7 @@ pre: " <b> 1.1. </b> "
 
 ---
 
-### Day 1 Summary & Key Takeaways
+### Week 1 Summary & Key Takeaways
 
 - **Credits Secured:** Successfully claimed $100 in startup credits and earned an additional $100 by completing the 5 guided tasks (Total: **$200**).
 - **Service Familiarity:** Gained hands-on experience deploying instances (EC2), configuring AI prompts (Bedrock), monitoring budgets (AWS Budgets), executing serverless functions (Lambda), and managing databases (RDS).
