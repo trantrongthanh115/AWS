@@ -64,4 +64,6 @@ In this final talk, the speaker shared their personal career progression startin
 
 ---
 
-![FCAJ Community Day 2026](/images/event3.jpg)
+### Event Photos
+
+![AWS First Cloud AI Journey Workshop](/images/event3.jpg)
